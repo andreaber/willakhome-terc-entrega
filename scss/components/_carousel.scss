@@ -1,0 +1,73 @@
+
+.carousel-index {
+    .customers-6-content {
+        .heading h3{
+            color: $color-titulo;
+        }
+        .carousel-indicators {
+            left: 0;
+            right: 0;
+            bottom: -18px;
+            margin-right: 0;
+            margin-left: 0;
+            &.active {
+                background: $opposite-color;
+            }
+        }
+        .carousel-inner {
+            .card {
+                padding: 15px 15px;
+                border-radius: 4px;
+                background: $bg-color;
+                border: solid 1px rgba(255, 255, 255, 0.1);
+                .card:hover{
+                    transition: 0.5s ease;
+                }
+                .card-body {
+                    position: relative;
+                    img {
+                        transition: 0.5s ease;
+                    }
+                    h3.card-title {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: $opposite-color;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                    h4.card-title {
+                        font-size: 1.5rem;
+                        line-height: 24px;
+                        color: $color-titulo;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                    p.card-text{
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// .carousel-index .card-body span {
+//     font-size: 30px;
+//     color: #ebebeb;
+// }
+
+
+
+// .carousel-index .carousel-indicators li {
+//     background: #ffffff;
+//     border-radius: 50%;
+//     border: none;
+//     width: 12px;
+//     height: 12px;
+//     margin: 0px 6px;
+// }
+

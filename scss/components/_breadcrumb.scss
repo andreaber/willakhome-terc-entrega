@@ -1,0 +1,128 @@
+.breadcrum-about .breadcrum-bg {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(42, 42 , 42, 0.71),
+        rgba(38, 40, 40, 0.78)
+    ),
+    url(../assets/img/techo.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    padding-top: 86px;
+    p {
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        max-width: 500px;
+        a{
+            font-size: 16px;
+            color: $color-texto;
+            a:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.breadcrum-buy .breadcrum-bg p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    max-width: 500px;
+    a{
+        font-size: 16px;
+        color: $color-texto;
+        a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+}
+
+
+.breadcrum-sell .breadcrum-bg {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(42, 42 , 42, 0.71),
+        rgba(38, 40, 40, 0.78)
+    ),
+    url(../assets/img/interior-living.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    padding-top: 86px;
+    p {
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        max-width: 500px;
+        a{
+            font-size: 16px;
+            color: $color-texto;
+            a:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.breadcrum-blog .breadcrum-bg {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(42, 42 , 42, 0.71),
+        rgba(38, 40, 40, 0.78)
+    ),
+    url(../assets/img/news.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    padding-top: 86px;
+    p {
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        max-width: 500px;
+        a{
+            font-size: 16px;
+            color: $color-texto;
+            a:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+.breadcrum-contact .breadcrum-bg {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(42, 42 , 42, 0.71),
+        rgba(38, 40, 40, 0.78)
+    ),
+    url(../assets/img/contacto.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    padding-top: 86px;
+    p {
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        max-width: 500px;
+        a{
+            font-size: 16px;
+            color: $color-texto;
+            a:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}
+

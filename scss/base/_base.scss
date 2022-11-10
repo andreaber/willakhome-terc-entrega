@@ -1,0 +1,152 @@
+body,
+html {
+    background: $bg-color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+select {
+    outline: none;
+    font-family: sans-serif;
+}
+
+button,
+.btn{
+    cursor: pointer;
+    font-family: sans-serif;
+    background: $color-tema!important;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+iframe {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+span.diff {
+    color: $color-secundario;
+}
+
+ul .navbar.nav .nav-item li{
+    color: #dadada;
+}
+
+.btn-form{
+    color: $color-texto;
+    background-color: transparent;
+    border-color: $color-secundario;
+}
+
+.btn-form:hover{
+    background-color: $color-secundario;
+} 
+
+.btn-theme {
+    padding: 12px 30px;
+    color: #222222;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border: 0;
+}
+
+.btn-theme:hover {
+    background: $color-tema;
+    outline: none;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    background-color: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.btn-theme2 {
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border: 2px solid $color-tema;
+    background: $color-tema;
+}
+
+.btn-theme2:hover {
+    background: $color-tema;
+    border: 2px solid $color-tema;
+    color: $color-blanco;
+}
+
+.btn-theme2:focus {
+    border-color: none !important;
+} 
+
+a.red {
+    font-size: 16px;
+    font-weight: 600;
+    color: $opposite-color;
+    display: inline-block;
+}
+
+a.red:hover {
+    color: $color-tema;
+}
+
+
+.heading {
+    max-width: 750px;
+}
+
+.heading h3 {
+    font-size: 30px;
+    line-height: 36px;
+    color: $color-titulo;
+    font-weight: 600;
+}
+
+.heading p {
+    color: $color-texto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h4.sub-title {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
