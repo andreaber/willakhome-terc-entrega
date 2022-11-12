@@ -128,14 +128,14 @@ ul .navbar.nav .nav-item li{
     border-color: none !important;
 } 
 
-a.red {
+a.rojo {
     font-size: 16px;
     font-weight: 600;
     color: var(--opposite-color);
     display: inline-block;
 }
 
-a.red:hover {
+a.rojo:hover {
     color: var(--color-tema);
 }
 
@@ -1005,14 +1005,14 @@ body::after {
 .pic-box-4 .icon-info p{
     color: var(--color-texto);
 }
-.pic-box-4 a.red {
+.pic-box-4 a.rojo {
     font-size: 16px;
     line-height: 24px;
     color: var(--opposite-color);
     display: inline-block;
     font-weight: 700;
 }
-.pic-box-4 a.red:hover {
+.pic-box-4 a.rojo:hover {
     color: var(--color-tema);
 }
 .pic-box-4 .feature-gd {

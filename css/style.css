@@ -116,14 +116,14 @@ ul .navbar.nav .nav-item li {
   border-color: none !important;
 }
 
-a.red {
+a.rojo {
   font-size: 16px;
   font-weight: 600;
   color: #f2210a;
   display: inline-block;
 }
 
-a.red:hover {
+a.rojo:hover {
   color: #db0d02;
 }
 
@@ -1048,7 +1048,7 @@ body::after {
   color: #dadada;
 }
 
-.pic-box-4 a.red {
+.pic-box-4 a.rojo {
   font-size: 16px;
   line-height: 24px;
   color: #f2210a;
@@ -1056,7 +1056,7 @@ body::after {
   font-weight: 700;
 }
 
-.pic-box-4 a.red:hover {
+.pic-box-4 a.rojo:hover {
   color: #db0d02;
 }
 
