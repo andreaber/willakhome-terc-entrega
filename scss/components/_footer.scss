@@ -1,57 +1,52 @@
 .footer{
     color: $color-texto;
+    .bigfoot {
+        padding: 2rem 0px;
+        background: #222222;
+        .container{
+            .social {
+                margin-top: 20px;
+                .rrss{
+                    .rrss-link{
+                        a {
+                            margin-right: 10px;
+                            color: #ccc;
+                            width: 42px;
+                            height: 42px;
+                            border: solid 1px rgba(255, 255, 255, 0.1);
+                            line-height: 42px;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 18px;
+                            border-radius: 50%;
+                            transition: 0.3s;
+                            &:hover {
+                                border: solid 1px $opposite-color;
+                                color: $opposite-color;
+                                transition: 0.3s;
+                            }
+                            span.bi {
+                                width: 20px;
+                            }
+                            a:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .copy {
+                border-top: 1px solid #454545;
+                padding-top: 2em;
+                margin-top: 2em;
+                a {
+                    color: #ccc;
+                    &:hover {
+                        color: $opposite-color;
+                    }                    
+                }
+            }
+        }
+    }
 }
-
-.footer .bigfoot {
-    padding: 2rem 0px;
-    background: #222222;
-}
-
-.footer .social {
-    margin-top: 20px;
-}
-
-.footer .social a {
-    margin-right: 10px;
-    color: #ccc;
-    width: 42px;
-    height: 42px;
-    border: solid 1px rgba(255, 255, 255, 0.1);
-    line-height: 42px;
-    display: inline-block;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.footer .social a:hover {
-    border: solid 1px $opposite-color;
-    color: $opposite-color;
-    transition: 0.3s;
-}
-
-.footer .social a span.bi {
-    width: 20px;
-}
-
-.footer .social a:last-child {
-    margin-right: 0;
-}
-
-.footer .copy {
-    border-top: 1px solid #454545;
-    padding-top: 2em;
-    margin-top: 2em;
-}
-
-.footer .copy a {
-    color: #ccc;
-}
-
-.footer .copy a:hover {
-    color: $opposite-color;
-}
-
-
 

@@ -447,7 +447,6 @@ h4.sub-title {
   font-size: 16px;
   line-height: 25px;
   color: #fff;
-  /* padding: 10px 30px; */
   padding: 8px 12px;
   border-radius: 4px;
   border: 1px solid #f2210a;
@@ -721,17 +720,14 @@ body::after {
 .footer {
   color: #dadada;
 }
-
 .footer .bigfoot {
   padding: 2rem 0px;
   background: #222222;
 }
-
-.footer .social {
+.footer .bigfoot .container .social {
   margin-top: 20px;
 }
-
-.footer .social a {
+.footer .bigfoot .container .social .rrss .rrss-link a {
   margin-right: 10px;
   color: #ccc;
   width: 42px;
@@ -744,32 +740,26 @@ body::after {
   border-radius: 50%;
   transition: 0.3s;
 }
-
-.footer .social a:hover {
+.footer .bigfoot .container .social .rrss .rrss-link a:hover {
   border: solid 1px #f2210a;
   color: #f2210a;
   transition: 0.3s;
 }
-
-.footer .social a span.bi {
+.footer .bigfoot .container .social .rrss .rrss-link a span.bi {
   width: 20px;
 }
-
-.footer .social a:last-child {
+.footer .bigfoot .container .social .rrss .rrss-link a a:last-child {
   margin-right: 0;
 }
-
-.footer .copy {
+.footer .bigfoot .container .copy {
   border-top: 1px solid #454545;
   padding-top: 2em;
   margin-top: 2em;
 }
-
-.footer .copy a {
+.footer .bigfoot .container .copy a {
   color: #ccc;
 }
-
-.footer .copy a:hover {
+.footer .bigfoot .container .copy a:hover {
   color: #f2210a;
 }
 
