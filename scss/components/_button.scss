@@ -1,0 +1,35 @@
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1rem;
+        color: $color-secundario;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-secundario;
+        padding: 3px;
+        margin-bottom: 2rem;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-blanco;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        width: 10rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+.btn-story {
+    margin-top: 1rem;
+    color: $color-texto;
+    font-size: .9rem;
+}
+

@@ -1,15 +1,17 @@
 .banner{
     .banner-view {
-        background: url(../assets/img/portada.jpg) no-repeat right;
+        background: url(../assets/img/portada.jpg);
         background-size: cover;
-        min-height: 60vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        height: 60vh;
         position: relative;
         z-index: 0;
         display: grid;
-        align-items: center;
-        .banner-view:before{
+        align-items: center; 
+        .banner-view:before {
             content: "";
-            background: rgba(0, 0, 0, 0.53);
+            background: rgba(0, 0, 0, 0.8);
             position: absolute;
             top: 0;
             min-height: 100%;
@@ -18,42 +20,113 @@
             z-index: -1;
         }
         .banner-info {
-            padding-top: 100px;
-            h1.banner-text,
-            h2.banner-text{
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 2.3rem;
-            line-height: 2.5rem;
-            color: $color-titulo;
-            }
-            h2.banner-text{
-                font-size: 1.8rem;
-            }
-            a.button1{
-                display: inline-block;
-                text-align: center;
+            .banner-text-1 {
+                display: block;
+                margin-bottom: 2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 2rem;
+                letter-spacing: .5rem;
+                line-height: 2.5rem;
                 color: $color-titulo;
-                margin: 0 5px;
-                font-size: 16px;
-                line-height: 25px;
-                border: 1px solid $color-titulo;
-                padding: 10px 30px;
-                cursor: pointer;
-                border-radius: 4px;
-                a.button1:hover{
-                    text-align: center;
-                    background: $opposite-color;
-                    font-size: 16px;
-                    line-height: 25px;
-                    color: #fff;
-                    padding: 10px 30px;
-                    border-radius: 4px;
-                    border: 1px solid $opposite-color;
+                animation-name: moverIzq;
+                animation-duration: 5s;
+            }
+            @media (min-width: 992px) {
+                .banner-text-1{
+                    font-weight: 300;
+                    font-size: 4rem;
+                    letter-spacing: 2rem;
+
+                }
+            }
+            .banner-text-2{
+                margin-bottom: 2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                line-height: 2.5rem;
+                color: $color-titulo;
+                letter-spacing: .2rem;
+                animation-name: moverDer;
+                animation-duration: 5s;
+            }
+            @media (min-width: 992px) {
+                .banner-text-2{
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    letter-spacing: .5rem;
+                }
+            }
+
+            
+            
+            a.button-banner {
+                &:link,
+                &:visited {
+                    margin-top: 1rem;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 1rem 2rem;
+                    display: inline-block;
+                    border-radius: 1rem;
+                    transition: all .2s;
+                    position: relative;
+                    font-size: .9rem;
+                    letter-spacing: .2rem;
+                }
+            
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 1rem 2rem rgba($bg-color,.5);
+                    
+                    &::after {
+                        transform: scaleX(1.4) scaleY(1.6);
+                        opacity: 0;
+                    }
+                }
+            
+                &:active {
+                    transform: translateY(-1px);
+                    box-shadow: 0 5px 10px rgba($bg-color,.3);
+                }
+            
+                &--white {
+                    background-color: $color-secundario;
+                    color: $color-texto;
+                    letter-spacing: .3rem;
+            
+                    &::after {
+                        background-color: $color-blue-dark;
+                    }
+                    
+                }
+                
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 1rem;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all .4s;
+                }
+                    
+                &--animated {
+                    animation: moverAbajo 1s ease-out .75s;
+                    animation-fill-mode: backwards;
                 }
             }
         }
     }
+    @media (min-width: 992px) {
+        .banner-view {
+            height: 95vh;
+        }
+    }  
 }
 
 .banner-view:before{
@@ -66,20 +139,3 @@
     right: 0;
     z-index: -1;
 }
-
-@media (min-width: 992px) {
-
-    .banner .container h1.banner-text{
-        font-weight: 500;
-        font-size: 3rem;
-    }
-    .banner .container h2.banner-text{
-        font-weight: 600;
-        font-size: 2rem;
-    }
-    .banner .banner-view{
-        min-height: 90vh;
-    }
-}
-
-

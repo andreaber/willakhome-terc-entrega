@@ -1,8 +1,12 @@
 @import "./utils/variables";
 
+@import "./base/animations";
 @import "./base/base";
+@import "./base/tipography";
 
 @import "./components/banner";
+@import "./components/button";
+@import "./components/composition";
 @import "./components/breadcrumb";
 @import "./components/cards";
 @import "./components/carousel";
@@ -10,4 +14,7 @@
 @import "./components/form";
 @import "./components/grids";
 @import "./components/header";
+@import "./components/story";
 
+@import "./pages/index";
+@import "./pages/comprar";

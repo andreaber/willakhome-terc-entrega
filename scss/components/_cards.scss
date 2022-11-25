@@ -1,12 +1,175 @@
+.card-price {
+    position: relative;
+    height: 33rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+
+    &__side {
+        height: 33rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: 3px;
+        box-shadow: 0 1rem 2.5rem rgba($color-black, .9);
+
+        &--front {
+            background-color: $color-blanco;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-one-light, $color-one-dark)
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-three-light, $color-three-dark)
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-two-light, $color-two-dark)
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // ESTILOS
+    &__picture {
+        background-size: cover;
+        height: 14rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-one-light, $color-one-dark), url(../assets/img/gal-1.jpeg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-three-light, $color-three-dark), url(../../assets/img/gal-4.jpeg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-two-light, $color-two-dark), url(../../assets/img/gal-7.jpeg);
+        }
+    }
+
+    &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-blanco;
+    position: absolute;
+    top: 10rem;
+    right: 1.25rem;
+    width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-one-light, .85), 
+            rgba($color-one-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-three-light, .85), 
+            rgba($color-three-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-two-light, .85), 
+            rgba($color-two-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 1.5rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1rem;
+                color: $color-blue-dark;
+                padding: .65rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $light-bg-color-2;
+                }
+            }
+        }
+    }
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-blanco;
+        margin-bottom: 5rem;
+    }
+
+    &__price-only {
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 3.75rem;
+        font-weight: 100;
+    }
+
+    &__btn {
+        background-color: $color-blanco;
+        color: $color-blue-dark;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        list-style: none;
+        text-transform: uppercase;
+        box-shadow: 0 1rem 2.5rem rgba($color-black, .7);
+
+        &:hover {
+            color: $color-blue-light;
+        }
+    }
+}
+
+
 .portfolio .container .product a.button1,
-.banner .container a.button1,
 .pic-box-3 .container .slug a.button1{
     display: inline-block;
     text-align: center;
     color: $color-titulo;
     margin: 0 5px;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     border: 1px solid $color-titulo;
     padding: 10px 30px;
     border-radius: 4px;
@@ -14,12 +177,11 @@
 }
 
 .portfolio .container .product a.button1:hover,
-.banner .container a.button1:hover,
 .pic-box-3 .container .slug a.button1:hover{
     text-align: center;
     background: $opposite-color;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #fff;
     padding: 10px 30px;
     border-radius: 4px;
@@ -27,7 +189,7 @@
 }
 
 .portfolio .lugares {
-    padding: 70px 0;
+    padding: 4.4rem 0;
 }
 
 .portfolio .d-grid {
@@ -48,15 +210,15 @@
 
 .portfolio .product-details {
     position: absolute;
-    bottom: 30px;
+    bottom: 1.9rem;
     width: 100%;
 }
 
 .portfolio .product-details a {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     color: #304659;
-    margin-bottom: 10px;
+    margin-bottom: .7rem;
     font-weight: bold;
 }
 
@@ -67,14 +229,14 @@
 .portfolio span.price {
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #3b5266;
 }
 
 .portfolio section.tab-content {
     display: none;
-    padding: 38px 0 0;
+    padding: 2.4rem 0 0;
 }
 
 .portfolio input {
@@ -86,10 +248,9 @@
     text-align: center;
     color: $color-titulo;
     margin: 0 2px;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     border: 1px solid $color-titulo;
-    /* padding: 10px 30px; */
     padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
@@ -109,8 +270,8 @@
 .portfolio label.tabtle:hover {
     text-align: center;
     background: $opposite-color;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #fff;
     padding: 8px 12px;
     border-radius: 4px;
@@ -126,8 +287,8 @@
 
 .portfolio .info-bg {
     background: #fff;
-    padding: 25px 20px;
-    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 10px 1.9rem 0 rgba(17, 17, 17, 0.09);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
@@ -137,9 +298,9 @@
 }
 
 .portfolio .info-bg h5 a {
-    font-size: 20px;
-    line-height: 25px;
-    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $color-blanco;
     display: block;
     text-transform: capitalize;
     margin-bottom: 5px;
@@ -150,35 +311,35 @@
 }
 
 .portfolio.info-bg h5 a:hover {
-    color: #000000;
+    color: $color-black;
 }
 
 .portfolio .info-bg p {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: $color-secundario;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: .7rem;
+    margin-bottom: 1.25rem;
 }
 
 .portfolio .info-bg span.price {
     color: $color-tema;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 1.5rem;
 }
 
 @media (min-width: 992px){
     .portfolio .grid-col-3 {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
+        grid-gap: 1.9rem;
     }
     .portfolio label.tabtle,
     .portfolio input:checked + label.tabtle,
     .portfolio label.tabtle:hover {
-        padding: 10px 30px;
+        padding: .7rem 1.9rem;
         margin: 0 5px;
     }
 }
